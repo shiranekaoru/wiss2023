@@ -1,0 +1,33 @@
+{
+    "plugins": [
+        "latex2e"
+    ],
+    "rules": {
+        "prh": {
+            "rulePaths": [
+                "./prh.yml"
+            ]
+        },
+        "no-parallel-ka": true,
+        "@textlint-ja/morpheme-match": {
+            "dictionaryPathList": [
+                "./morpheme-match-dict.js"
+            ]
+        },
+        "preset-ja-technical-writing": {
+            "ja-no-mixed-period": {
+                "periodMark": "．"
+            },
+            "max-kanji-continuous-len": {
+                "max": 8
+            },
+            "ja-no-redundant-expression": {
+                "dictOptions": {
+                    "dict5": {
+                        "disabled": true
+                    }
+                }
+            }
+        }
+    }
+}

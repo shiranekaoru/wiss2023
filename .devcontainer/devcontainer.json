@@ -1,0 +1,14 @@
+{
+    "name": "dev",
+    "dockerFile": "Dockerfile",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "James-Yu.latex-workshop",
+                "taichi.vscode-textlint",
+                "ms-vsliveshare.vsliveshare"
+            ]
+        }
+    },
+    "postCreateCommand": "npm install"
+}
